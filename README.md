@@ -52,7 +52,7 @@ admin.site.register(Movie,MovieAdmin)
 ## OUTPUT
 
 
-![Screenshot 2025-03-17 110509](https://github.com/user-attachments/assets/9286547e-dd68-46cb-a6a1-a3e817bb142a)
+![Screenshot 2025-04-12 152233](https://github.com/user-attachments/assets/d31cbcf4-9514-40c1-99da-4d9e80bfb89b)
 
 
 ## RESULT
