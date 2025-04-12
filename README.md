@@ -1,12 +1,12 @@
 # Ex02 Django ORM Web Application
-## Date: 18.10.2023
+## Date: 12.04.2025
+
+NAME: BOOBESH PM
+
+REG NO: 212222233001
 
 ## AIM
-To develop a Django application to store and retrieve data from a Football Players database using Object Relational Mapping(ORM).
-
-## Entity Relationship Diagram
-
-Include your ER diagram here
+To develop a Django application to store and retrieve data from a Movies Database using Object Relational Mapping(ORM).
 
 ## DESIGN STEPS
 
@@ -20,34 +20,40 @@ Create a new app in Django project
 Enter the code for admin.py and models.py
 
 ### STEP 4:
-Execute Django admin and create 10 Football players
+Execute Django admin and create details for 10 books
 
 ## PROGRAM
-admin.py
-from django.contrib import admin
-from.models import Football_player,Football_playerAdmin
-admin.site.register(Football_player,Football_playerAdmin)
-
+```
 models.py
+
 
 from django.db import models
 from django.contrib import admin
-class Football_player (models.Model):
-    name=models.CharField(max_length=20)
-    age=models.IntegerField()
-    height=models.IntegerField()
-    weight=models.IntegerField()
-    number=models.IntegerField()
+class Movie(models.Model):
+mid=models.IntegerField()
+    mname=models.CharField(max_length=100)
+    collection=models.IntegerField()
+    year=models.IntegerField()
+    rating=models.FloatField()
 
-class Football_playerAdmin(admin.ModelAdmin):
-    list_display=['name','age','height','weight','number']
-Include your code here
+class MovieAdmin(admin.ModelAdmin):
+    list_display=('mid','mname','collection','year','rating')
+
+
+admin.py
+
+
+from django.contrib import admin
+from .models import Movie,MovieAdmin
+admin.site.register(Movie,MovieAdmin)
+
+```
 
 ## OUTPUT
-![image](https://github.com/Boobeshkrishna/ORM/assets/141472052/5559d92c-b669-4960-bdf4-12b30601971a)
 
-Include the screenshot of your admin page.
+
+![Screenshot 2025-03-17 110509](https://github.com/user-attachments/assets/9286547e-dd68-46cb-a6a1-a3e817bb142a)
 
 
 ## RESULT
-Thus the program for creating a database using ORM hass been executed successfully
+Thus the program for creating movies database using ORM hass been executed successfully
